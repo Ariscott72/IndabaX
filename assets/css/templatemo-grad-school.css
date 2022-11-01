@@ -311,7 +311,8 @@ a.menu-link { display: none; }
 
 .video-overlay {
     position: absolute;
-    background-color: rgba(22,34,57,0.75);
+    background-image: url(../images/presi.JPG);
+    background-color:rgba(8, 20, 43, 0.75);
     top: 0;
     left: 0;
     bottom: 7px;
