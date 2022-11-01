@@ -886,10 +886,10 @@ section.courses .owl-carousel button.active {
 /* Video */
 
 section.video {
-    background-image: url(../images/R.jpeg);
+    background-image: url(../images/téléchargement.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #ec550f;
+    background-color: #e7e2df;
     padding: 120px 0px;
 }
 
