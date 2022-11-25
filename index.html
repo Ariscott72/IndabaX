@@ -33,22 +33,31 @@
   <header class="main-header clearfix" role="header" width="300px">
     <div class="logo flex-row align-items-center">
       <a  href="#"> <img src="assets/images/logo_indaba.JPG" alt="images" height="50" width="100"></a>
-      <span style="font-family: 'Sacramento', cursive; font-size: 2.2rem;" class="text-white">IndabaX</span>
+      <!-- <span style="font-family: 'Sacramento', cursive; font-size: 2.2rem;" class="text-white">IndabaX</span> -->
       
+
     </div>
     <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
     <nav id="menu" class="main-nav" role="navigation">
       <ul class="main-menu">
         <li><a href="#section1">Accueil</a></li>
-        <li><a href="#section2">Programmes</a></li>
+        <li><a href="">Intervenants</a></li>
+        <li><a href="#section2">Programme</a></li>
+        <li><a href="#section3">Inscription</a></li>
         <li class="has-submenu"><a href="#">Historiques</a>
           <ul class="sub-menu">
-            <li><a href="#section4">Edition 2021</a></li>
+            <li class="has-submenu"> <center><a href="">Edition 2021</a></center>
+              <ul>
+                <li><a href="#section4"> Intervenants </a></li>
+                <li><a href=""> Photos </a></li>
+                <li><a href=""> Programme </a></li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li><a href="#section5" >A propos</a></li>
         
-        <li><a href="#section6">Contact</a></li>
+        <li><a href="#section6">Contacts</a></li>
       </ul>
     </nav>
     
@@ -118,12 +127,7 @@
   
         </div>
     </article>
-  </section>  
-
-              
-
-           
-              
+  </section>                
           
           </div>
         </div>
@@ -135,11 +139,7 @@
       <div class="row">
         
           <div class="continer centerIt">
-            <div>
-
-              
-                
-                 
+            <div>   
               </center>
               
             </div>
@@ -160,12 +160,31 @@
                 </div>
                 <div class="col-md-12">
                   <fieldset>
+                    <input name="prenoms" type="text" class="form-control" id="prenom"  placeholder="Prenoms" required="">
+                  </fieldset>
+                </div>
+                  <div class="col-md-12">
+                    <fieldset>
+                      <input name="inst" type="text" class="form-control" id="inst"  placeholder="Institution" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-md-12">
+                    <fieldset>
+                      <input name="prof" type="text" class="form-control" id="prof"  placeholder="Profession" required="">
+                    </fieldset>
+                  </div>
+                  <fieldset>
                     <input name="email" type="text" class="form-control" id="email" placeholder="Email" required="">
                   </fieldset>
                 </div>
                 <div class="col-md-12">
                   <fieldset>
                     <input name="tel" type="text" class="form-control" id="phone-number" placeholder="Telephone" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="ville" type="text" class="form-control" id="ville"  placeholder="Ville" required="">
                   </fieldset>
                 </div>
                 <div class="col-md-12">
@@ -317,60 +336,49 @@
                     <TABLE BORDER="1" >
                      
                         <TR>
-                          <TD width=10%><i>9h00 - 9h30 </i></TD>
-                          <TD><strong>Cérémonie d'ouverture</strong></TD>  
-                          <TD>Directeur de l'UFR Mathématiques et Informatique<br>
-                            Président de l'Université</TD>
+                          <TD width=10%><i>8h30 – 09h00 </i></TD>
+                          <TD><strong>Opening</strong></TD>  
+                          
                         </TR>
                          <TR>
-                          <TD width=10%><i>9h30 - 9h35</i></TD>
-                          <TD><strong>Présentation du thème </strong></TD>  
-                          <TD>Président du comité scientifique</TD>
+                          <TD width=10%><i>09h00 - 10h30</i></TD>
+                          <TD><strong>Tutorial 1(High Performance Computing) </strong></TD>  
+                          <TD></TD>
                          </TR>
+                      
                          <TR>
-                          <TD width=10%><i>9h40 - 10h10</i></TD>
-                          <TD><strong>Conférence 1: Machine learning application in public policy </strong></TD>  
-                          <TD>Dr. Marlène KOFFI, University of Toronto</TD>
-                         </TR>
-
-                         <TR>
-                          <TD width=10%><i>10h15 - 11h00</i></TD>
-                          <TH colspan="2"><center><strong><strong>Cocktail </strong></center></TH>  
+                          <TD width=10%><i>10h30 - 10h45</i></TD>
+                          <TH colspan="2"><center><strong><strong>Coffee break </strong></center></TH>  
                         
                          </TR>
 
                          <TR>
-                          <TD width=10%><i>11h05 - 12h05</i></TD>
-                          <TD><strong>Séminaire 1: Deep learning et application en bioinformatique et en imagerie </strong></TD>  
-                          <TD>Dr. Stanislas ASSOHOUN, Dr. Mamadou DIARRA</TD>
+                          <TD width=10%><i>10h45 - 12h15</i></TD>
+                          <TD><strong> Continuation of toturial 1 (High Performance Computing) </strong></TD>  
                          </TR>
 
                          <TR>
-                          <TD width=10%><i>11h05 - 12h05</i></TD>
-                          <TH colspan="2"><center><strong><strong>DEJEUNE</strong></strong></center></TH>  
+                          <TD width=10%><i>12h30 - 13h45</i></TD>
+                          <TH colspan="2"><center><strong><strong>LUNCH</strong></strong></center></TH>  
           
                          </TR>
 
                          <TR>
-                          <TD width=10%><i>13h20 - 13h50</i></TD>
-                          <TD><strong>Conférence 2: Traduction automatique de la parole: Etat de l'art et perspectives pour les langues africaines </strong></TD>  
-                          <TD>Mr Fabrice ZAPFACK, CTO à Data354<br></TD>
+                          <TD width=10%><i>14h00 - 16h00</i></TD>
+                          <TD><strong>Tutorial 2 (Deep learning)</strong></TD>  
                          </TR>
                          <TR>
-                          <TD width=10%><i>13h55 - 14h25</i></TD>
-                          <TD><strong>Conférence 3: Deep learning for Healthcare and Robotics  </strong></TD>  
-                          <TD>Professeur Anh NGUYEN, Université de Liverpool, Royaume-Uni</TD>
+                          <TD width=10%><i>16h00 - 16h15</i></TD>
+                          <TH colspan="2"><center><strong><strong>Coffee break </strong></center></TH>  
                          </TR>
                          <TR>
-                          <TD width=10%><i>14h30 - 15h00</i></TD>
-                          <TD><strong>Conférence 4:  IA: historique, présent et avenir </strong></TD>  
-                          <TD>Professeur Bernard DOUSSET, Université Paul Sabatier de Toulouse</TD>
+                          <TD width=10%><i>16h15 - 17h45</i></TD>
+                          <TD><strong>Continuation of toturial 2 (Deep learning) </strong></TD>  
                          </TR>
 
                          <TR>
-                          <TD width=10%><i>15h05 - 15h35</i></TD>
-                          <TD><strong>Conférence 5: Utilisation de l'IA dans le domaine de l'électricité (SmartGrid) </strong></TD>  
-                          <TD>Mme Armelle Gnassou N'GUESSAN, Directrice du Centre d'Excellence de Recherche en IA de la CIE.</TD>
+                          <TD width=10%><i>17h45</i></TD>
+                          <TH colspan="2"><center><strong><strong>Closing </strong></center></TH>  
                          </TR>
 
                          <TR>
